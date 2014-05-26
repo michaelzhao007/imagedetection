@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+    <class name="com.domain.Avatar" table="Avatar">
+        <id name="avaId" type="int">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="image" type="binary">
+            <column name="image" />
+        </property>
+        <property name="type" type="string">
+            <column name="type"/>
+        </property>
+    </class>
+</hibernate-mapping>
